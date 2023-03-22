@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  nuxt:
+    build:
+      context: .
+    image: nuxt-app
+    container_name: nuxt-app
+    ports:
+      - ${OUTPUT_PORT}:3000
+
+# Remember to see the pages on port OUTPUT_PORT in .env
